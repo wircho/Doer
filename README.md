@@ -39,6 +39,6 @@ Doer.task("/some/process", "Any", "Number", "Of", "Parameters")
   partialData in
   // Do something with `partialData`
 }
-.run(on: queue.asynchronous)
+.run(on: queue.asynchronously)
 
 ```

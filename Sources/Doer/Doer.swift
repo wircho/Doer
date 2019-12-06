@@ -104,7 +104,7 @@ public extension Doer.Task {
 }
 
 public extension DispatchQueue {
-  var synchronous: (() -> Void) -> Void { return sync }
-  var asynchronous: (@escaping () -> Void) -> Void { return { self.async(execute: $0) } }
+  var synchronously: (() -> Void) -> Void { return sync }
+  var asynchronously: (@escaping () -> Void) -> Void { return { self.async(execute: $0) } }
 }
 
